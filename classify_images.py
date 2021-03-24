@@ -65,28 +65,16 @@ def classify_images(images_dir, results_dic, model):
      Returns:
            None - results_dic is mutable data type so no return needed.         
     """
-    results_dic = dict()
-    for key in petlabel_dic:
+    
+    for key in results_dic:
         model_label = classifier(images_dir+key, model)
-        model_label = model_label.lower()
-        model_label = model_label.strip()
-        truth = petlabel_dic[key]
-        found = model_label.find(truth)
-        if found>=0:
-            if((found==0 and len(truth)== len(model_label)) or
-               (((found ==0) or (model_label[found-1]==" ")) and
-                ((found + len(truth) == len(model_label)) or
-                 (model_label[found +len(truth): found+len(truth)+1] in (","," "))
-                )
-               )
-              ):
-                if key not in results_dic:
-                    results_dic[key]= [truth, model_label, 1]
-            else:
-                if key not in results_dic:
-                    results_dic[key]= [truth, model_label, 0]
+        model_label = model_label.lower().strip()
+        truth = results_dic[key][0]
+        
+        if truth in model_label:
+            results_dic[key].extend((model_label, 1))
+                   
         else:
-            if key not in result_dic:
-                results_dic[key]= [truth, model_label, 0]
+            results_dic[key].extend((model_label, 0))
         
     None 

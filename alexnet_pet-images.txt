@@ -3,14 +3,21 @@ Command Line Arguments:
     arch = alexnet 
  dogfile = dognames.txt
 
-Pet Image Label Dictionary has 28 key-value pairs.
+Pet Image Label Dictionary has 40 key-value pairs.
 Below are 10 of them:
- 1 key: calculates_results_stats_hints.py  label:                          c
- 2 key:             test_classifier.py  label:                          t
- 3 key: print_functions_for_lab_checks.py  label:                          p
- 4 key:        get_input_args_hints.py  label:                          g
- 5 key:      adjust_results4_isadog.py  label:                          a
- 6 key: adjust_results4_isadog_hints.py  label:                          a
- 7 key: imagenet1000_clsid_to_human.txt  label:                          c
- 8 key:       classify_images_hints.py  label:                          c
- 9 key:              get_pet_labels.py  label:                          g
+ 1 key:            Dalmatian_04037.jpg  label:                          d
+ 2 key:         Basset_hound_01034.jpg  label:                          b
+ 3 key:              polar_bear_04.jpg  label:                          p
+ 4 key:               Poodle_07927.jpg  label:                          p
+ 5 key:     Golden_retriever_05182.jpg  label:                          g
+ 6 key:     Golden_retriever_05223.jpg  label:                          g
+ 7 key:       Great_pyrenees_05367.jpg  label:                          g
+ 8 key:           Great_dane_05320.jpg  label:                          g
+ 9 key:        Saint_bernard_08010.jpg  label:                          s
+10 key:     Golden_retriever_05195.jpg  label:                          g
+
+     MATCH:
+
+ NOT A MATCH:
+
+# Total Images 0 # Matches: 0 # NOT Matches: 0

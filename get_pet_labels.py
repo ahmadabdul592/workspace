@@ -40,7 +40,7 @@ def get_pet_labels(image_dir):
       List. The list contains for following item:
          index 0 = pet image label (string)
     """
-    # Replace None with the results_dic dictionary that you created with this
+    # Replace None with the   results_dic dictionary that you created with this
     # function
     file_name = [name for name in listdir(image_dir) if name[0] != "."]
     sample_list = []

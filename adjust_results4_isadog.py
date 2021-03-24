@@ -68,12 +68,12 @@ def adjust_results4_isadog(results_dic, dogfile):
            None - results_dic is mutable data type so no return needed.
     """           
     dognames_dic = dict()
-    with open(dogsfile, "r") as infile:
+    with open(dogfile, "r") as infile:
         line = infile.readline()
         while line != "":
             line=line.rstrip()
             if line not in dognames_dic:
-                dogsname_dic[line]=1
+                dognames_dic[line]=1
             else:
                 print("warning: Duplicate dognames", line)
             line = infile.readline()
